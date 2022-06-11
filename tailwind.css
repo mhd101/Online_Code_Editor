@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.CodeMirror {
+    border-radius: 5px;
+    font-size: 16px; 
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #525252;
+    border-radius: 5px;
+  }

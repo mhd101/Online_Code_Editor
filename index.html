@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+
+
+</head>
+
+<body class="bg-[#1b1b1b] h-min-screen">
+
+    <!-- Navbar -->
+
+    <header class=" flex justify-between items-center bg-[#1b1b1b] lg:bg-transparent">
+
+
+        <div class="px-4 py-4 lg:ml-[8rem] ">
+            <a href="#"><img class="h-10" src="Logo.png"></a>
+        </div>
+
+        <button id="toggle" class="px-4 py-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-white " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div id="links"
+            class="text-white fixed -right-full top-20  h-full  w-64 gap-4 flex flex-col lg:py-10 text-2xl bg-[#1b1b1b] lg:static lg:flex-row  lg:w-[25rem] lg:mx-4 lg:my-2 lg:justify-between lg:mr-28 lg:bg-transparent transition-all ">
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="index.html">HOME</a>
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="features.html">FEATURES</a>
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="aboutus.html">ABOUT</a>
+        </div>
+
+    </header>
+
+    <!-- Main Section -->
+
+    <section class="flex justify-center items-center h-[90vh]  lg:h-[80vh] 2xl:h-[85vh] ">
+        <div
+            class="flex justify-center items-center flex-col lg:flex-row lg:w-full lg:justify-between xl:flex-row xl:w-full xl:justify-between 2xl:flex-row 2xl:w-full 2xl:justify-between ">
+
+            <div class="right lg:order-last lg:mr-28 xl:order-last xl:mr-28 2xl:order-last 2xl:mr-28 ">
+                <img class="  md:flex md:justify-center md:items-center md:w-[550px] lg:w-[600px] xl:w-[600px] 2xl:w-[650px] "
+                    src="Cards.png" width="500px">
+            </div>
+
+            <div
+                class="flex items-center justify-center flex-col lg:ml-28 lg:items-start xl:ml-28 xl:items-start 2xl:ml-28 2xl:items-start ">
+                <div class="left mt-4">
+                    <h1
+                        class="text-white font-bold text-[2.5rem] text-center sm:text-[3rem] lg:w-[28rem] lg:text-[5rem] lg:text-left lg:leading-tight xl:w-[34rem] xl:text-[6rem] xl:text-left xl:leading-tight 2xl:w-[45rem] 2xl:text-[8rem] 2xl:text-left 2xl:leading-tight">
+                        Online Code Editor</h1>
+                    <p
+                        class="text-white text-[1rem] text-center sm:text-[1.5rem] lg:text-[2rem] lg:text-left xl:text-[2.3rem] xl:text-left 2xl:text-[2.5rem] 2xl:text-left">
+                        Build, test and discover your front-end code online</p>
+                </div>
+                <div class="button mt-4 lg:mt-6 xl:mt-7 2xl:mt-8  ">
+                    <button
+                        class="text-white  text-2xl px-14 py-7 border border-white rounded-lg   xl:hover:drop-shadow-[1px_1px_5px_white] ">
+                        <a href="editor.html">START CODING</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="toggle.js"></script>
+</body>
+
+</html>

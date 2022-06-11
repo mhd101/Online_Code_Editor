@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+
+
+</head>
+
+<body class="bg-[#1b1b1b]">
+
+    <!-- Navbar -->
+
+    <header class=" flex justify-between items-center bg-[#1b1b1b] lg:bg-transparent">
+        <div class="px-4 py-4 lg:ml-[8rem] ">
+            <a href="index.html"><img class="h-10" src="Logo.png"></a>
+        </div>
+
+        <button id="toggle" class="px-4 py-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-white " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div id="links"
+            class="text-white fixed -right-full  top-20  h-full  w-64 gap-4 flex flex-col lg:py-10 text-2xl bg-[#1b1b1b] lg:static lg:flex-row  lg:w-[25rem] lg:mx-4 lg:my-2 lg:justify-between lg:mr-28 lg:bg-transparent transition-all z-10">
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="index.html">HOME</a>
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="features.html">FEATURES</a>
+            <a class="px-5 py-1 hover:text-[#d6d6d6]" href="aboutus.html">ABOUT</a>
+        </div>
+
+    </header>
+
+    <!-- Main Section -->
+
+    <div class="heading text-white flex flex-col justify-center items-center text-[2rem] font-medium my-10 ">
+        <h1>FEATURES</h1>
+        <div>
+            <img src="Line.png">
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center container mx-auto">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            <!-- Cards -->
+            <div
+                class="rounded-lg bg-[#1b1b1b] text-white lg:hover:outline lg:hover:outline-white lg:outline-1 lg:cursor-pointer drop-shadow-lg">
+                <div class="p-10 flex flex-col">
+                    <h1 class="text-2xl mt-3 font-medium text-center">Syntax Highlighting</h1>
+                    <p class="text-lg mt-3 text-center">Syntax Highlighting is a function, which highlight individual
+                        components of the source code according to their syntax in color, with changed fonts or through
+                        graphical changes.</p>
+                </div>
+            </div>
+            <div
+                class="rounded-lg bg-[#1b1b1b] text-white lg:hover:outline lg:hover:outline-white lg:outline-1 lg:cursor-pointer drop-shadow-lg">
+                <div class="p-10 flex flex-col">
+                    <h1 class="text-2xl mt-3 font-medium text-center">Code Runner</h1>
+                    <p class="text-lg mt-3 text-center">Code Runner compile & runs Html, Css, and Javascript
+                        simultaneously. When the user click on the run button it will preview the output on your
+                        browser.</p>
+                </div>
+            </div>
+            <div
+                class="rounded-lg bg-[#1b1b1b] text-white lg:hover:outline lg:hover:outline-white lg:outline-1 lg:cursor-pointer drop-shadow-lg">
+                <div class="p-10 flex flex-col">
+                    <h1 class="text-2xl mt-3 font-medium text-center">Save File</h1>
+                    <p class="text-lg mt-3 text-center">This feature will let you to download your code separately in
+                        your machine. So that you can use code in future. Also you can share your code with your peers.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="rounded-lg bg-[#1b1b1b] text-white lg:hover:outline lg:hover:outline-white lg:outline-1 lg:cursor-pointer drop-shadow-lg">
+                <div class="p-10 flex flex-col">
+                    <h1 class="text-2xl mt-3 font-medium text-center">Toggle Full Screen</h1>
+                    <p class="text-lg mt-3 text-center">This feature will help you to toggle the code editor to
+                        fullscreen so that you can write code easily. Press F11 when cursor is in the editor to toggle
+                        full screen editing. Esc can also be used to exit full screen editing.</p>
+                </div>
+            </div>
+            <div
+                class="rounded-lg bg-[#1b1b1b] text-white lg:hover:outline lg:hover:outline-white lg:outline-1 lg:cursor-pointer drop-shadow-lg">
+                <div class="p-10 flex flex-col">
+                    <h1 class="text-2xl mt-3 font-medium text-center">Auto Close Tags</h1>
+                    <p class="text-lg mt-3 text-center">This feature will automatically add closing tags when you
+                        complete the opening tag. It will help you to write the code faster.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="toggle.js"></script>
+</body>
+
+</html>

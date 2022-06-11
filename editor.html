@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Importing Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+
+    <!-- Importing CodeMirror Library-->
+    <link rel="stylesheet" href="/codemirror/lib/codemirror.css">
+    </link>
+    <script type="text/javascript" src="/codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="/codemirror/theme/material-darker.css">
+    <script type="text/javascript" src="/codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="codemirror\mode\css\css.js"></script>
+    <script type="text/javascript" src="codemirror\mode\javascript\javascript.js"></script>
+    <script src="/codemirror/addon/edit/closetag.js"></script>
+    <script src="/codemirror/addon/edit/closebrackets.js"></script>
+    <link rel="stylesheet" href="codemirror/addon/display/fullscreen.css">
+    <script src="/codemirror/addon/display/fullscreen.js"></script>
+
+
+
+</head>
+
+<body class="bg-[#1b1b1b]">
+
+    <!-- Navbar -->
+
+    <header class=" bg-[#1b1b1b] ">
+        <div class="flex justify-center items-center">
+            <div class="px-4 py-4">
+                <a href="index.html"><img class="h-10" src="Logo.png"></a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Editor -->
+
+    <div class="editor flex flex-col items-center justify-center my-10 xl:flex-row xl:gap-3">
+
+        <input class="" type="text" id="htmlfile" style="display: none;">
+        <div id="html"
+            class="h-[40vh] w-[90vw] outline outline-white outline-1 rounded-sm  mb-5 lg:hover:outline-2 xl:w-[30%] xl:mb-0">
+        </div>
+
+        <input type="text" id="cssfile" style="display: none;">
+        <div id="css"
+            class="h-[40vh] w-[90vw] outline outline-white outline-1 rounded-sm mb-5 lg:hover:outline-2 xl:w-[30%] xl:mb-0 ">
+        </div>
+
+        <input type="text" id="jsfile" style="display: none;">
+        <div id="javascript"
+            class="h-[40vh] w-[90vw] outline outline-white outline-1 rounded-sm mb-10 lg:hover:outline-2 xl:w-[30%] xl:mb-0">
+        </div>
+
+        <!-- Buttons -->
+        <div class="btns xl:h-[40vh] xl:flex xl:justify-center xl:flex-col xl:gap-5">
+
+            <button
+                class="hidden xl:bg-[#e44d26] xl:border-none xl:px-5 xl:py-3 xl:font-bold xl:flex xl:justify-center xl:items-center xl:gap-1 xl:text-white xl:hover:drop-shadow-[1px_1px_10px_#e44d26] xl:rounded-lg"
+                id="html-btn">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </span>
+                HTML
+            </button>
+
+            <button
+                class="hidden  xl:xl:bg-[#42a5f5] xl:border-none xl:px-5 xl:py-3 xl:font-bold  xl:flex xl:justify-center xl:items-center xl:gap-1 xl:text-white xl:hover:drop-shadow-[1px_1px_10px_#42a5f5] xl:rounded-lg"
+                id="css-btn">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </span>
+                CSS
+            </button>
+
+            <button
+                class="hidden xl:bg-[#ffca28] xl:border-none xl:px-5 xl:py-3 xl:font-bold  xl:flex xl:justify-center xl:items-center xl:gap-1 xl:text-white xl:hover:drop-shadow-[1px_1px_10px_#ffca28] xl:rounded-lg"
+                id="js-btn">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                </span>
+                JS
+            </button>
+
+            <button
+                class="bg-white border-none px-32 py-5 font-bold rounded-sm xl:px-5 xl:py-3 xl:hover:drop-shadow-[1px_1px_10px_white] xl:rounded-lg"
+                id="btn">RUN</button>
+
+        </div>
+
+    </div>
+
+    <!-- Preview -->
+    <div class="preview-container flex flex-col items-center justify-center my-10 ">
+        <iframe class="bg-white h-[40vh] w-[90vw] rounded-sm xl:w-[98vw]" id="code" frameborder="0"></iframe>
+    </div>
+
+    <script src="Parser.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
