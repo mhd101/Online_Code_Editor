@@ -4,7 +4,7 @@ Online Code Editor allows you to write the front-end code in the browser, and se
 
 ## Demo
 
-[Online-Code-Editor](online-code-editor.netlify.app)
+[Online-Code-Editor](https://online-code-editor.netlify.app)
 
 ## Features
 
@@ -22,4 +22,4 @@ Online Code Editor allows you to write the front-end code in the browser, and se
 
 ## Contact
 
-- [Twitter](https://twitter.com/_mhd_101)
+[Twitter](https://twitter.com/_mhd_101)
