@@ -17,7 +17,7 @@ Online Code Editor allows you to write the front-end code in the browser, and se
 ## Made With
 
 - Html
-- CSS (TailWind)
+- CSS (Tailwind Framework)
 - Javascript
 
 ## Contact
